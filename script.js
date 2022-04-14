@@ -1,5 +1,9 @@
 let jogador = null;
 
+let jogadorSelecionado = document.getElementById('jogador-selecionado');
+
+mudarJogador('X');
+
 function escolherQuadrado(id) {
     
     let quadrado = document.getElementById(id);
@@ -11,4 +15,5 @@ function escolherQuadrado(id) {
 
 function mudarJogador(valor) {
     jogador = valor;
+    jogadorSelecionado.innerHTML = jogador;
 }
