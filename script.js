@@ -41,3 +41,13 @@ function checaVencedor() {
     let quadrado8 = document.getElementById(8);
     let quadrado9 = document.getElementById(9);
 }
+
+function checaSequencia(quadrado1, quadrado2, quadrado3) {
+    let eigual = false;
+
+    if(quadrado1.innerHTML !== '-' && quadrado1.innerHTML === quadrado2.innerHTML && quadrado2.innerHTML === quadrado3.innerHTML) {
+        eigual = true;
+    }
+
+    return eigual;
+}
