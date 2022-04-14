@@ -2,12 +2,14 @@ let jogador = null;
 
 let jogadorSelecionado = document.getElementById('jogador-selecionado');
 
+let quadrados = document.getElementsByClassName('quadrado');
+
 mudarJogador('X');
 
 function escolherQuadrado(id) {
     
     let quadrado = document.getElementById(id);
-    if(quadrado.innerHTML !== '') {
+    if(quadrado.innerHTML !== '-') {
         return;
     }
 
@@ -26,4 +28,16 @@ function escolherQuadrado(id) {
 function mudarJogador(valor) {
     jogador = valor;
     jogadorSelecionado.innerHTML = jogador;
+}
+
+function checaVencedor() {
+    let quadrado1 = document.getElementById(1);
+    let quadrado2 = document.getElementById(2);
+    let quadrado3 = document.getElementById(3);
+    let quadrado4 = document.getElementById(4);
+    let quadrado5 = document.getElementById(5);
+    let quadrado6 = document.getElementById(6);
+    let quadrado7 = document.getElementById(7);
+    let quadrado8 = document.getElementById(8);
+    let quadrado9 = document.getElementById(9);
 }
