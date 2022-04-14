@@ -7,6 +7,9 @@ mudarJogador('X');
 function escolherQuadrado(id) {
     
     let quadrado = document.getElementById(id);
+    if(quadrado.innerHTML !== '') {
+        return;
+    }
 
     quadrado.innerHTML = jogador;
     quadrado.style.color = '#000';
