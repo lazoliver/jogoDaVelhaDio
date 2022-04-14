@@ -29,3 +29,12 @@ body {
     font-size: 30px;
     margin-top: 10px;
 }
+
+button {
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+}
