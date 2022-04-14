@@ -4,8 +4,6 @@ let jogadorSelecionado = document.getElementById('jogador-selecionado');
 
 let vencedorSelecionado = document.getElementById('vencedor-selecionado');
 
-let quadrados = document.getElementsByClassName('quadrado');
-
 mudarJogador('X');
 
 function escolherQuadrado(id) {
@@ -116,4 +114,18 @@ function checaSequencia(quadrado1, quadrado2, quadrado3) {
     }
 
     return eigual;
+}
+
+function reiniciar() {
+    vencedor = null;
+    vencedorSelecionado.innerHTML = '';
+
+    for(let i = 1; i <= 9; i++) {
+        let quadrado = document.getElementById(i);
+        quadrado.style.background = '#eee';
+        quadrado.style.color = '#eee';
+        quadrado.innerHTML = '-';
+    }
+
+    mudarJogador('X');
 }
