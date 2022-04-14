@@ -23,6 +23,7 @@ body {
     font-size: 68px;
     margin: 10px;
     cursor: pointer;
+    color: #eee;
 }
 
 .vencedor, .jogador {
