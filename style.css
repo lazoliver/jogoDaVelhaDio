@@ -10,6 +10,10 @@ body {
     text-align: center;
 }
 
+#title {
+    padding: 40px
+}
+
 .quadrado {
     text-align: center;
     width: 100px;
