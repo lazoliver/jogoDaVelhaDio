@@ -1,6 +1,8 @@
-let jogador = null;
+let jogador, vencedor = null;
 
 let jogadorSelecionado = document.getElementById('jogador-selecionado');
+
+let vencedorSelecionado = document.getElementById('vencedor-selecionado');
 
 let quadrados = document.getElementsByClassName('quadrado');
 
@@ -43,8 +45,14 @@ function checaVencedor() {
 
     if(checaSequencia(quadrado1, quadrado2, quadrado3)) {
         mudaCorQuadrado(quadrado1, quadrado2, quadrado3);
+        mudarVencedor(quadrado1)
     }
 }
+
+function mudarVencedor(quadrado) {
+    vencedor = quadrado.innerHTML;
+    vencedorSelecionado.innerHTML = vencedor;
+} 
 
 function mudaCorQuadrado(quadrado1, quadrado2, quadrado3) {
     quadrado1.style.color = '#8f0';
