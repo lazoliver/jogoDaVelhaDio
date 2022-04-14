@@ -40,6 +40,16 @@ function checaVencedor() {
     let quadrado7 = document.getElementById(7);
     let quadrado8 = document.getElementById(8);
     let quadrado9 = document.getElementById(9);
+
+    if(checaSequencia(quadrado1, quadrado2, quadrado3)) {
+        mudaCorQuadrado(quadrado1, quadrado2, quadrado3);
+    }
+}
+
+function mudaCorQuadrado(quadrado1, quadrado2, quadrado3) {
+    quadrado1.style.color = '#8f0';
+    quadrado2.style.color = '#8f0';
+    quadrado3.style.color = '#8f0';
 }
 
 function checaSequencia(quadrado1, quadrado2, quadrado3) {
